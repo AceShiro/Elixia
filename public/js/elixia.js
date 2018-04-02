@@ -1,7 +1,7 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict"; // Start of script
 
-  // Smooth scrolling using jQuery easing
+  // Smooth scrolling
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -40,11 +40,11 @@
   $(window).scroll(navbarCollapse);
 
   // Hide navbar when modals trigger
-  $('.portfolio-modal').on('show.bs.modal', function(e) {
+  $('.patern2-modal').on('show.bs.modal', function(e) {
     $(".navbar").addClass("d-none");
   })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+  $('.patern2-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
 
-})(jQuery); // End of use strict
+})(jQuery); // End of script

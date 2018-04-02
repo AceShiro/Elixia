@@ -38,11 +38,11 @@
       </div>
 	
 	<!-- Scripts -->
-	<script src="/js/jquery/jquery.min.js"></script>
-	<script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
 
-	<script src="/js/jquery-easing/jquery.easing.min.js"></script>
-	<script src="/js/elixia.js"></script>
+	<script src="{{ asset('js/jquery-easing/jquery.easing.min.js') }}"></script>
+	<script src="{{ asset('js/elixia.js') }}"></script>
 	
 
 </footer>
