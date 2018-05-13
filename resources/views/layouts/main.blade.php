@@ -9,6 +9,8 @@
         @yield('content')
 
 
+        @yield('modals')
+
     </body>
 
     @include('partials._footer')

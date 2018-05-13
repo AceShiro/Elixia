@@ -1,4 +1,4 @@
-<footer>
+<footer class="bg-light">
 
 	<div class="container">
         <div class="row">
@@ -8,18 +8,18 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/_Elixia_">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/ElixiaCafeCulturel/">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
+                <a href="https://www.instagram.com/elixia.imaginaire/">
+                  <i class="fa fa-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -27,10 +27,7 @@
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <span>Contact : elixia.imaginaire@gmail.com</span>
               </li>
             </ul>
           </div>

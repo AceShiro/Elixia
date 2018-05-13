@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->boolean('verified')->default(false);
+            $table->integer('registered_events')->default('0');
         });
     }
 
