@@ -215,9 +215,7 @@
       </div>
     </section>
 
-    @include('partials._team')
-
-    <section id="location">
+    <section class="bg-light" id="location">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -270,6 +268,8 @@
         </div>
       </div>
     </section>
+
+    @include('partials._team')
 
 
 @endsection

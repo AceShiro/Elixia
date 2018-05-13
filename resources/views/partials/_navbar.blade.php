@@ -20,10 +20,10 @@
               <a class="nav-link js-scroll-trigger" href="#choices">La Carte</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">L'Équipe</a>
+              <a class="nav-link js-scroll-trigger" href="#location">Infos Pratiques</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#location">Infos Pratiques</a>
+              <a class="nav-link js-scroll-trigger" href="#team">L'Équipe</a>
             </li>
 
             @guest
