@@ -4,6 +4,11 @@
 
 <h2>Changelogs</h2>
 
+<h3>v1.0</h3>
+<ul>
+	<li>Main Page Appearance - Release Version</li>
+</ul>
+
 <h3>v0.3</h3>
 <ul>
 	<li>Main Page Appearance - Pre-Release Version</li>

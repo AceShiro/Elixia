@@ -83,7 +83,7 @@ class RegisterController extends Controller
 
         Mail::to($user->email)->send(new VerifyMail($user));
  
-        return redirect('login');
+        return $user;
     }
 
     public function verifyUser($token)
@@ -99,10 +99,10 @@ class RegisterController extends Controller
                 $status = "Votre e-mail a déja été vérifié. Vous pouvez maintenant vous connecter.";
             }
         }else{
-            return redirect('login')->with('warning', "Désolé votre e-mail ne peut pas etre identifié.");
+            return redirect('/login')->with('warning', "Désolé votre e-mail ne peut pas etre identifié.");
         }
  
-        return redirect('login')->with('status', $status);
+        return redirect('/login')->with('status', $status);
     }
  
 }
