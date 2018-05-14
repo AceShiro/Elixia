@@ -11,7 +11,7 @@ class MainController extends Controller
 {
     public function index()
     {
-    	$events = Event::where('status', '!=', 'Finished')->orderBy('event_when', 'desc')->get();
+    	$events = Event::where('status', '!=', 'Finished')->orderBy('event_when', 'asc')->get();
 
         return view('pages.home', compact('events'));
     }

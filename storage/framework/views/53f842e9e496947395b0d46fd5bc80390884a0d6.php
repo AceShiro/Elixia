@@ -103,7 +103,7 @@
                   <strong><i class="fa fa-clock-o margin-r-5"></i> Quand?</strong>
 
                   <p class="text-muted">
-                    <?php echo e($event->event_when); ?>
+                    <?php echo e(strftime('%d %B %G - %R', strtotime($event->event_when))); ?>
 
                   </p>
 

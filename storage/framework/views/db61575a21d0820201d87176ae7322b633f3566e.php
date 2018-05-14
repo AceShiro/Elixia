@@ -2,26 +2,26 @@
 
 <html>
 	<head>
-    	<title>Elixia - Confirmation d'inscription a l'evenement <?php echo e($event['name']); ?></title>
+    	<title>Elixia - Confirmation d'inscription à l'événement <?php echo e($event['name']); ?></title>
 	</head>
  
 	<body>
-		<h2>Merci pour votre inscription a l'evenement <?php echo e($event['name']); ?></h2>
+		<h2>Merci pour votre inscription à l'événement <?php echo e($event['name']); ?> !</h2>
 		<br/>
-		Vous trouverez ci-dessous les informations lies a l'evenement :
+		Vous trouverez ci-dessous les informations liés à l'événement :
 		<br/>
 		<br>
-		Nom de l'evenement : <?php echo e($event['name']); ?>
+		Nom de l'événement : <?php echo e($event['name']); ?>
 
 		<br>
-		Quand? : <?php echo e($event['event_when']); ?>
+		Quand? : <?php echo e(strftime('%d %B %G - %R', strtotime($event->event_when))); ?>
 
 		<br>
 		Mode de paiement : 
 		<?php if($payment->mode == 1): ?>
-		Abonnement a presenter au comptoir.
+		Abonnement à presenter au comptoir.
 		<?php else: ?>
-		Ticket a acheter au comptoir.
+		Ticket à acheter au comptoir.
 		<?php endif; ?>
 	</body>
  

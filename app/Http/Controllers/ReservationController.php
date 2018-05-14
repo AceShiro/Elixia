@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
-use App\Mail\InvoiceMail;
+use App\Mail\MailDeConfirmation;
 
 use App\User;
 use App\Event;
@@ -52,7 +52,7 @@ class ReservationController extends Controller
                 'mode' => $request->payment,
             ]);
 
-	    	Mail::to($user->email)->send(new InvoiceMail($user, $event, $payment));
+	    	Mail::to($user->email)->send(new MailDeConfirmation($user, $event, $payment));
 	    	return view('users.show', compact('user'));
     	}
     }
