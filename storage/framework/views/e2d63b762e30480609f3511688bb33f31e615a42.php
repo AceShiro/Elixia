@@ -402,7 +402,7 @@
                   <div class="text-justify" style="padding-top: 50px;">
                     <p>L'accès aux soirées d'Elixia est gratuit pour les moins de 10 ans (dans la limite des places disponibles),
                      à l'exception des soirées spéciales enfants.</p>
-                    <p>Le tarif jeune concerne les personnes agées de 10 a 17 ans (inclus).</p>
+                    <p>Le tarif jeune concerne les personnes agées de 10 à 17 ans (inclus).</p>
                     <p>Les enfants de moins de 13 ans (inclus) doivent obligatoirement être accompagnés d'un adulte responsable,
                      pour l'accès au café en journée, comme pour les soirées.</p>
                     <p>Le tarif famille comprend l'abonnement pour les deux conjoints (tarif adulte) et deux de leurs enfants (tarif jeune).

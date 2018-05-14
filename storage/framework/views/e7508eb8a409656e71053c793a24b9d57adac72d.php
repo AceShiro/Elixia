@@ -15,6 +15,9 @@
 
     <link href="<?php echo e(asset('css/main.css')); ?>" rel="stylesheet">
 
+    <link rel="shortcut icon" href="<?php echo e(asset('favicon.png')); ?>">
+    <meta name="description" content="This is an example of a meta description.">
+
         <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
