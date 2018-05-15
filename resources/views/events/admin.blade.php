@@ -182,6 +182,7 @@
                   </thead>
                   <tbody>
                   @foreach($event->users as $user)
+                  <tr>
                     <td>{{ $user->first_name . " " . $user->last_name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>
@@ -194,6 +195,7 @@
                     @if (Auth::user()->admin == true)
                       <td><a href="{{ route('users.show', $user->id) }}"><span class="label label-info"><i class="fa fa-sign-in"></i></span></a></td>
                     @endif
+                  </tr>
                   @endforeach
                   </tbody>
                 </table>
