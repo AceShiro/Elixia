@@ -32,7 +32,7 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Lieu de vie au mets gourmands</h4>
+                    <h4>Lieu de vie aux mets gourmands</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Dégustez nos spécialités chaudes (cafés, thés, chocolats chauds) ou froides (smoothies, cocktails, milkshakes)
