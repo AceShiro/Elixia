@@ -381,7 +381,7 @@
 
 
                   <div class="row justify-content-around">
-                    <div class="col-md-5 tarifs" style="background-color: #ffffffb3;box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
+                    <div class="col-md-5 tarifs" style="background-color: rgba(255, 255, 255, 0.8);box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
                       <h3 class="tarifs">Abonnements</h3>
                       <hr>
                       <div class="pull-left">Tarif Jeune</div><div class="pull-right">15€ / mois</div> <br>
@@ -390,7 +390,7 @@
                       <div class="pull-left">Tarif Famille</div><div class="pull-right">50€ / mois</div> <br>
                       <hr>
                     </div>
-                    <div class="col-md-5 tarifs" style="background-color: #ffffffb3;box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
+                    <div class="col-md-5 tarifs" style="background-color: rgba(255, 255, 255, 0.8);box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
                       <h3 class="tarifs">Entrées individuelles</h3>
                       <hr>
                       <div class="pull-left">Tarif Jeune</div><div class="pull-right">5€</div> <br>

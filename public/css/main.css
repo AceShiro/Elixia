@@ -447,7 +447,7 @@ a.tarifs {
 }
 
 .container.tarifs {
-  background-color: #fffc;border-radius: 20px;padding-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);border-radius: 20px;padding-top: 50px;
 }
 
 .patern2-modal .modal-content p {
