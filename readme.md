@@ -4,6 +4,12 @@
 
 <h2>Changelogs</h2>
 
+<h3>v1.0.1</h3>
+<ul>
+	<li>Ajout Tab Privatisation</li>
+	<li>Edit Event Bug Fixes</li>
+</ul>
+
 <h3>v1.0</h3>
 <ul>
 	<li>Main Page Appearance - Release Version</li>

@@ -1,5 +1,5 @@
 <!-- Team -->
-<section id="team">
+<section class="bg-light" id="team">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">

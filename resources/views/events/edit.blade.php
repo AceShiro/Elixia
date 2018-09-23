@@ -45,7 +45,7 @@
 
                         <div class="form-group">
                             <label for="event_when">{{ __('Quand ?') }}</label>
-                            <input id="event_when" type="datetime-local" class="form-control{{ $errors->has('event_when') ? ' is-invalid' : '' }}" {{ $event->event_when }} name="event_when" required>
+                            <input id="event_when" type="datetime" class="form-control{{ $errors->has('event_when') ? ' is-invalid' : '' }}" {{ $event->event_when }} name="event_when" required>
 
                                 @if ($errors->has('event_when'))
                                     <span class="invalid-feedback">

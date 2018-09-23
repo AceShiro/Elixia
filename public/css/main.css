@@ -98,6 +98,11 @@ section h3.section-subheading {
   font-family: KoaraF;
 }
 
+section h3.section-subheading.subPriva {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 section h3.tarifs {
   font-size: 24px;
   font-weight: 400;
@@ -153,6 +158,13 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+#imgPrivatisation {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px #888;
 }
 
 #mainNav {

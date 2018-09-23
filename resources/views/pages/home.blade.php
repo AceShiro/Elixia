@@ -215,7 +215,31 @@
       </div>
     </section>
 
-    <section class="bg-light" id="location">
+    <section class="bg-light" id="privatisation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Tarifs des privatisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center text-justify">
+            <h3 class="section-subheading subPriva" style="margin-top: 0px;">Réservations pendant les horaires d'ouvertures</h3>
+            <p class="text-muted">Il est tout à fait possible de réserver une table gratuitement pendant nos horaires d'ouverture en nous contactant préalablement via
+            notre page Facebook ou par mail, s'il s'agit d'une réservation pour moins de 15 personnes.</p>
+
+            <h3 class="section-subheading subPriva">Privatisation</h3>
+            <p class="text-muted">Néanmoins, si la réservation concerne plus de 15 personnes, si elle 
+          est entièrement ou partiellement hors de nos horaires d'ouvertures, ou si vous souhaitez tout simplement avoir le local pour vous tout seul, il est également
+         possible de le privatiser. Nos tarifs sont ci-dessous.</p>
+
+         <img id="imgPrivatisation" src="img/tarifs_privatisation.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -229,12 +253,12 @@
 
             <h3><i class="fa fa-clock-o"></i> - Horaires: </h3>
             <p class="text-muted">Lundi : Fermé</p>
-            <p class="text-muted">Mardi : 14h00 - 19h00</p>
-            <p class="text-muted">Mercredi : 14h00 - 19h00</p>
-            <p class="text-muted">Jeudi : 14h00 - 19h00</p>
-            <p class="text-muted">Vendredi : 14h00 - 19h00</p>
-            <p class="text-muted">Samedi : 14h00 - 19h00</p>
-            <p class="text-muted">Dimanche : 14h00 - 17h00</p>
+            <p class="text-muted">Mardi : 14h30 - 19h30</p>
+            <p class="text-muted">Mercredi : 14h30 - 19h30</p>
+            <p class="text-muted">Jeudi : 14h30 - 19h30</p>
+            <p class="text-muted">Vendredi : 11h00 - 19h00</p>
+            <p class="text-muted">Samedi : 11h00 - 19h00</p>
+            <p class="text-muted">Dimanche : 11h00 - 19h00</p>
 
             <hr>
             
@@ -310,17 +334,20 @@
                             <li>Date et Heure : {{ strftime('%d %B %G - %R', strtotime($event->event_when)) }}</li>
                             @if (Auth::guest())
                               @if ($event->availability == 0)
-                              <li>Navré, cette soirée est complete...</li>
+                              <li>Navré, cette soirée est complète...</li>
                               <li>Connectez-vous pour pouvoir vous inscrire aux suivantes !</li>
+                              @elseif ($event->availability < 10)
+                              <li>Seulement quelques places restantes !</li>
+                              <li>Merci de vous connecter pour pouvoir vous inscrire !</li>
                               @else
-                              <li>Places disponibles : {{ $event->availability }}</li>
-                              <li>Merci de vouloir vous connecter pour pouvoir vous inscrire !</li>
+                              <li>Des places sont encore disponibles !</li>
+                              <li>Merci de vous connecter pour pouvoir vous inscrire !</li>
                               @endif
                             @else
                               @if ($event->availability == 0)
-                              <li>Navré, cette soirée est complete...</li>
+                              <li>Navré, cette soirée est complète...</li>
                               @elseif (Auth::user()->events()->Find($event->id))
-                              <li>Vous etes inscrit a cet evenement !</li>
+                              <li>Vous êtes inscrit à cet événement !</li>
                               @else
                               <li>Places disponibles : {{ $event->availability }}</li>
                               @endif

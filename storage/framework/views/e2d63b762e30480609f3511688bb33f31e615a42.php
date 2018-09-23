@@ -30,7 +30,7 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>Lieu de vie au mets gourmands</h4>
+                    <h4>Lieu de vie aux mets gourmands</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Dégustez nos spécialités chaudes (cafés, thés, chocolats chauds) ou froides (smoothies, cocktails, milkshakes)
@@ -213,7 +213,31 @@
       </div>
     </section>
 
-    <section class="bg-light" id="location">
+    <section class="bg-light" id="privatisation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Tarifs des privatisations</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center text-justify">
+            <h3 class="section-subheading subPriva" style="margin-top: 0px;">Réservations pendant les horaires d'ouvertures</h3>
+            <p class="text-muted">Il est tout à fait possible de réserver une table gratuitement pendant nos horaires d'ouverture en nous contactant préalablement via
+            notre page Facebook ou par mail, s'il s'agit d'une réservation pour moins de 15 personnes.</p>
+
+            <h3 class="section-subheading subPriva">Privatisation</h3>
+            <p class="text-muted">Néanmoins, si la réservation concerne plus de 15 personnes, si elle 
+          est entièrement ou partiellement hors de nos horaires d'ouvertures, ou si vous souhaitez tout simplement avoir le local pour vous tout seul, il est également
+         possible de le privatiser. Nos tarifs sont ci-dessous.</p>
+
+         <img id="imgPrivatisation" src="img/tarifs_privatisation.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -227,12 +251,12 @@
 
             <h3><i class="fa fa-clock-o"></i> - Horaires: </h3>
             <p class="text-muted">Lundi : Fermé</p>
-            <p class="text-muted">Mardi : 14h00 - 19h00</p>
-            <p class="text-muted">Mercredi : 14h00 - 19h00</p>
-            <p class="text-muted">Jeudi : 14h00 - 19h00</p>
-            <p class="text-muted">Vendredi : 14h00 - 19h00</p>
-            <p class="text-muted">Samedi : 14h00 - 19h00</p>
-            <p class="text-muted">Dimanche : 14h00 - 17h00</p>
+            <p class="text-muted">Mardi : 14h30 - 19h30</p>
+            <p class="text-muted">Mercredi : 14h30 - 19h30</p>
+            <p class="text-muted">Jeudi : 14h30 - 19h30</p>
+            <p class="text-muted">Vendredi : 11h00 - 19h00</p>
+            <p class="text-muted">Samedi : 11h00 - 19h00</p>
+            <p class="text-muted">Dimanche : 11h00 - 19h00</p>
 
             <hr>
             
@@ -308,17 +332,20 @@
                             <li>Date et Heure : <?php echo e(strftime('%d %B %G - %R', strtotime($event->event_when))); ?></li>
                             <?php if(Auth::guest()): ?>
                               <?php if($event->availability == 0): ?>
-                              <li>Navré, cette soirée est complete...</li>
+                              <li>Navré, cette soirée est complète...</li>
                               <li>Connectez-vous pour pouvoir vous inscrire aux suivantes !</li>
+                              <?php elseif($event->availability < 10): ?>
+                              <li>Seulement quelques places restantes !</li>
+                              <li>Merci de vous connecter pour pouvoir vous inscrire !</li>
                               <?php else: ?>
-                              <li>Places disponibles : <?php echo e($event->availability); ?></li>
-                              <li>Merci de vouloir vous connecter pour pouvoir vous inscrire !</li>
+                              <li>Des places sont encore disponibles !</li>
+                              <li>Merci de vous connecter pour pouvoir vous inscrire !</li>
                               <?php endif; ?>
                             <?php else: ?>
                               <?php if($event->availability == 0): ?>
-                              <li>Navré, cette soirée est complete...</li>
+                              <li>Navré, cette soirée est complète...</li>
                               <?php elseif(Auth::user()->events()->Find($event->id)): ?>
-                              <li>Vous etes inscrit a cet evenement !</li>
+                              <li>Vous êtes inscrit à cet événement !</li>
                               <?php else: ?>
                               <li>Places disponibles : <?php echo e($event->availability); ?></li>
                               <?php endif; ?>
@@ -379,7 +406,7 @@
 
 
                   <div class="row justify-content-around">
-                    <div class="col-md-5 tarifs" style="background-color: #ffffffb3;box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
+                    <div class="col-md-5 tarifs" style="background-color: rgba(255, 255, 255, 0.8);box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
                       <h3 class="tarifs">Abonnements</h3>
                       <hr>
                       <div class="pull-left">Tarif Jeune</div><div class="pull-right">15€ / mois</div> <br>
@@ -388,7 +415,7 @@
                       <div class="pull-left">Tarif Famille</div><div class="pull-right">50€ / mois</div> <br>
                       <hr>
                     </div>
-                    <div class="col-md-5 tarifs" style="background-color: #ffffffb3;box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
+                    <div class="col-md-5 tarifs" style="background-color: rgba(255, 255, 255, 0.8);box-shadow: 5px 10px 5px #888;border-radius: 10px;padding-top: 10px;">
                       <h3 class="tarifs">Entrées individuelles</h3>
                       <hr>
                       <div class="pull-left">Tarif Jeune</div><div class="pull-right">5€</div> <br>

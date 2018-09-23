@@ -189,6 +189,7 @@
                   </thead>
                   <tbody>
                   <?php $__currentLoopData = $event->users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <tr>
                     <td><?php echo e($user->first_name . " " . $user->last_name); ?></td>
                     <td><?php echo e($user->email); ?></td>
                     <td>
@@ -201,6 +202,7 @@
                     <?php if(Auth::user()->admin == true): ?>
                       <td><a href="<?php echo e(route('users.show', $user->id)); ?>"><span class="label label-info"><i class="fa fa-sign-in"></i></span></a></td>
                     <?php endif; ?>
+                  </tr>
                   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                   </tbody>
                 </table>
