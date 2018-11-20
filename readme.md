@@ -4,6 +4,11 @@
 
 <h2>Changelogs</h2>
 
+<h3>v1.0.2</h3>
+<ul>
+	Main Page - Edits and Bug Fixes
+</ul>
+
 <h3>v1.0.1</h3>
 <ul>
 	<li>Ajout Tab Privatisation</li>

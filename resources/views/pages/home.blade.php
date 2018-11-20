@@ -256,9 +256,9 @@
             <p class="text-muted">Mardi : 14h30 - 19h30</p>
             <p class="text-muted">Mercredi : 14h30 - 19h30</p>
             <p class="text-muted">Jeudi : 14h30 - 19h30</p>
-            <p class="text-muted">Vendredi : 11h00 - 19h00</p>
-            <p class="text-muted">Samedi : 11h00 - 19h00</p>
-            <p class="text-muted">Dimanche : 11h00 - 19h00</p>
+            <p class="text-muted">Vendredi : 14h30 - 19h30</p>
+            <p class="text-muted">Samedi : 14h30 - 19h30</p>
+            <p class="text-muted">Dimanche : 11h00 - 17h00</p>
 
             <hr>
             
